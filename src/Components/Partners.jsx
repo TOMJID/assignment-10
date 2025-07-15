@@ -6,11 +6,12 @@ function Partners() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="partners bg-foreground py-8">
-      <h2 className="text-center uppercase transition-all text-secondary my-8 font-light">
+      className="partners bg-foreground py-8"
+    >
+      <h2 className="my-8 text-center font-light uppercase text-secondary transition-all">
         Our trusted partners
       </h2>
-      <div className="max-w-5xl flex flex-wrap px-4 justify-around items-center gap-4 mx-auto my-2">
+      <div className="mx-auto my-2 flex max-w-5xl flex-wrap items-center justify-around gap-4 px-4">
         <img
           src="./BackHub__logo.svg"
           alt="BackHub logo displayed among other partner logos in a welcoming and professional environment. The logos are arranged in a row, conveying trust and collaboration. Text above reads Our trusted partners."

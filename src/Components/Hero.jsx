@@ -7,24 +7,25 @@ function Hero() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="text-white px-6 py-16 md:px-20 h-full bg-cover bg-center"
+      className="h-full bg-cover bg-center px-6 py-16 text-white md:px-20"
       style={{
         backgroundImage: `url('./hero.png')`,
         backgroundColor: "#0a2e36", // fallback color if image doesn't load
-      }}>
-      <div className="container mx-auto text-start ">
-        <div className=" pt-16 rounded-lg pb-32 space-y-4">
-          <h2 className="text-secondary  text-lg ">AI SDRs (aiDRs)</h2>
-          <h1 className="text-4xl md:text-5xl italic leading-tight">
+      }}
+    >
+      <div className="container mx-auto text-start">
+        <div className="space-y-4 rounded-lg pb-32 pt-16">
+          <h2 className="text-lg text-secondary">AI SDRs (aiDRs)</h2>
+          <h1 className="text-4xl italic leading-tight md:text-5xl">
             <span className="font-bold not-italic"> More</span> leads,
             <br />
             <span className="font-bold not-italic">less</span> people.
           </h1>
-          <p className="text-lg font-extralight max-w-lg">
+          <p className="max-w-lg text-lg font-extralight">
             Train an aiDR on your ICP and messaging matrix. Activate it on a
             patch. It will send personalized sequences to every target contact.
           </p>
-          <Button className="bg-secondary group mt-4 text-black font-semibold px-6 py-6 rounded-full  transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-lg hover:scale-105">
+          <Button className="group mt-4 rounded-full bg-secondary px-6 py-6 font-semibold text-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
             Sign Up for the Beta{" "}
             <img
               src="./arrow.svg"

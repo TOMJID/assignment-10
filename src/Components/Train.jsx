@@ -17,15 +17,17 @@ function Train() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="px-12">
+      className="px-12"
+    >
       <div
-        className="flex flex-col text-start items-center justify-center py-12"
-        style={bg}>
-        <div className="text-white text-2xl font-semibold mb-4">
+        className="flex flex-col items-center justify-center py-12 text-start"
+        style={bg}
+      >
+        <div className="mb-4 text-2xl font-semibold text-white">
           <h3>Train your aiDR on your...</h3>
-          <h3 className="text-secondary italic">preferred email st/</h3>
+          <h3 className="italic text-secondary">preferred email st/</h3>
         </div>
-        <p className="text-neutral-500 text-lg mb-6">
+        <p className="mb-6 text-lg text-neutral-500">
           You're in control, Train your aiDR on <br /> elements of your
           marketing strategy
         </p>

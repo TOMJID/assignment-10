@@ -12,9 +12,8 @@ function App() {
       <Hero />
       <Partners />
       <Features />
-      <Testimonials />
-
       <Train />
+      <Testimonials />
     </>
   );
 }
