@@ -32,22 +32,24 @@ function Testimonials() {
     setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="text-white py-12 px-2 sm:px-8 rounded-xl max-w-4xl mx-auto w-full">
-      <div className="relative flex flex-col items-center justify-center w-full">
-        <div className="flex justify-center mb-6">
+    <section className="mx-auto w-full max-w-4xl rounded-xl px-2 py-12 text-white sm:px-8">
+      <div className="relative flex w-full flex-col items-center justify-center">
+        <div className="mb-6 flex justify-center">
           <motion.div
-            className="bg-teal-900/60 rounded-full p-3"
+            className="rounded-full bg-teal-900/60 p-3"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            key={index + "-icon"}>
+            key={index + "-icon"}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="w-8 h-8 text-teal-400">
+              className="h-8 w-8 text-teal-400"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -56,29 +58,31 @@ function Testimonials() {
             </svg>
           </motion.div>
         </div>
-        <div className="w-full flex items-center justify-center relative">
+        <div className="relative flex w-full items-center justify-center">
           <button
             onClick={handlePrev}
-            className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-teal-300 rounded p-2 transition z-10"
-            aria-label="Previous">
+            className="absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20 sm:flex"
+            aria-label="Previous"
+          >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
-          <div className="flex-1 min-w-0">
+          <div className="min-w-0 flex-1">
             <AnimatePresence mode="wait">
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}>
-                <p className="text-center text-lg sm:text-xl md:text-2xl font-medium text-white/90 max-w-2xl mx-auto mb-6">
+                transition={{ duration: 0.5 }}
+              >
+                <p className="mx-auto mb-6 max-w-2xl text-center text-lg font-medium text-white/90 sm:text-xl md:text-2xl">
                   {testimonials[index].quote}
                 </p>
-                <div className="text-center mb-2">
-                  <span className="text-teal-400 font-bold block text-base md:text-lg">
+                <div className="mb-2 text-center">
+                  <span className="block text-base font-bold text-teal-400 md:text-lg">
                     {testimonials[index].name}
                   </span>
-                  <span className="text-xs md:text-sm text-white/60 block">
+                  <span className="block text-xs text-white/60 md:text-sm">
                     {testimonials[index].title}
                   </span>
                 </div>
@@ -87,8 +91,9 @@ function Testimonials() {
           </div>
           <button
             onClick={handleNext}
-            className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-teal-300 rounded p-2 transition z-10"
-            aria-label="Next">
+            className="absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20 sm:flex"
+            aria-label="Next"
+          >
             <ChevronRightIcon className="h-6 w-6" />
           </button>
         </div>
@@ -103,20 +108,23 @@ function Testimonials() {
               }
               initial={{ scale: 0.8, opacity: 0.5 }}
               animate={{ scale: i === index ? 1.2 : 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}></motion.span>
+              transition={{ duration: 0.3 }}
+            ></motion.span>
           ))}
         </div>
-        <div className="flex sm:hidden justify-center gap-8 mt-8 w-full">
+        <div className="mt-8 flex w-full justify-center gap-8 sm:hidden">
           <button
             onClick={handlePrev}
-            className="bg-white/10 hover:bg-white/20 text-teal-300 rounded p-2 transition"
-            aria-label="Previous">
+            className="rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20"
+            aria-label="Previous"
+          >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
           <button
             onClick={handleNext}
-            className="bg-white/10 hover:bg-white/20 text-teal-300 rounded p-2 transition"
-            aria-label="Next">
+            className="rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20"
+            aria-label="Next"
+          >
             <ChevronRightIcon className="h-6 w-6" />
           </button>
         </div>
