@@ -1,3 +1,4 @@
+import Allocate from "./Components/Allocate";
 import Features from "./Components/Features";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Navbar";
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Train />
       <Testimonials />
+      <Allocate />
     </>
   );
 }
