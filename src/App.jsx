@@ -1,5 +1,6 @@
 import Allocate from "./Components/Allocate";
 import Features from "./Components/Features";
+import GetStarted from "./Components/GetStarted";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Navbar";
 import Partners from "./Components/Partners";
@@ -16,6 +17,8 @@ function App() {
       <Train />
       <Testimonials />
       <Allocate />
+      <GetStarted />
+      
     </>
   );
 }
