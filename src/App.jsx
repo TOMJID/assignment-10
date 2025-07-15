@@ -1,11 +1,12 @@
-import Allocate from "./Components/Allocate";
-import Features from "./Components/Features";
-import GetStarted from "./Components/GetStarted";
-import Hero from "./Components/Hero";
 import Nav from "./Components/Navbar";
+import Hero from "./Components/Hero";
 import Partners from "./Components/Partners";
-import Testimonials from "./Components/Testimonials";
+import Features from "./Components/Features";
 import Train from "./Components/Train";
+import Testimonials from "./Components/Testimonials";
+import Allocate from "./Components/Allocate";
+import GetStarted from "./Components/GetStarted";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Testimonials />
       <Allocate />
       <GetStarted />
-      
+      <Footer />
     </>
   );
 }
