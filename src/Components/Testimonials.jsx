@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
@@ -64,7 +63,20 @@ function Testimonials() {
             className="absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20 sm:flex"
             aria-label="Previous"
           >
-            <ChevronLeftIcon className="h-6 w-6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
           </button>
           <div className="min-w-0 flex-1">
             <AnimatePresence mode="wait">
@@ -94,7 +106,20 @@ function Testimonials() {
             className="absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20 sm:flex"
             aria-label="Next"
           >
-            <ChevronRightIcon className="h-6 w-6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
           </button>
         </div>
         <div className="mt-8 flex justify-center gap-2">
@@ -118,14 +143,40 @@ function Testimonials() {
             className="rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20"
             aria-label="Previous"
           >
-            <ChevronLeftIcon className="h-6 w-6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
           </button>
           <button
             onClick={handleNext}
             className="rounded bg-white/10 p-2 text-teal-300 transition hover:bg-white/20"
             aria-label="Next"
           >
-            <ChevronRightIcon className="h-6 w-6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
           </button>
         </div>
       </div>
